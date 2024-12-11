@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import Banner from "../components/Banner"
 import MovieReview from "../components/MovieReview"
 
-export default function SingleBook({ movie }) {
+export default function SingleMovie() {
     const { id } = useParams()
 
     const reviews = [
@@ -33,7 +33,7 @@ export default function SingleBook({ movie }) {
         <>
             <Banner title="Film title" subtitle="By Author name" leadtext="lorem ipsum dolor" />
 
-            <section className="reviews">
+            <section>
                 <div className="container">
                     {reviews.map((review) => <MovieReview key={review.id} review={review} />)}
                 </div>
