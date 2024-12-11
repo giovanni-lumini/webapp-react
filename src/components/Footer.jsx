@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer>
-            <div className="bg-DARK py-2 px-2">&copy; {new Date().getFullYear()} BOOL MOVIES</div>
+        <footer className="bg-dark text-white p-4 mt-5 text-center">
+            <div>&copy; {new Date().getFullYear()} BOOL MOVIES</div>
         </footer>
     )
 }

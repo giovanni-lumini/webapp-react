@@ -6,9 +6,9 @@ export default function MoviesPage() {
     const movies = [
         {
             id: 1,
-            title: 'Movie Title 1',
-            author: 'Some Author 1',
-            overview: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, quam.'
+            title: 'Il Padrino',
+            author: 'Mario Puzo',
+            overview: "La vita di Vito Corleone, impegnato nel difficile compito di tenere la famiglia unita e l'impero mafioso compatto."
         },
         {
             id: 2,
