@@ -31,10 +31,10 @@ export default function SingleMovie() {
 
     return (
         <>
-            <Banner title="Film title" subtitle="By Author name" leadtext="lorem ipsum dolor" />
+            {/* <Banner title="Film title" subtitle="By Author name" leadtext="lorem ipsum dolor" /> */}
 
             <section>
-                <div className="container">
+                <div className="container pt-5">
                     {reviews.map((review) => <MovieReview key={review.id} review={review} />)}
                 </div>
             </section>
