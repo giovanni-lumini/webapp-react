@@ -15,7 +15,6 @@ export default function MoviesPage() {
                 console.log(data.movies);
                 setMovies(data.movies)
             })
-
     }, [])
 
     return (
