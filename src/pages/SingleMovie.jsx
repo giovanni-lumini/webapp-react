@@ -14,18 +14,18 @@ export default function SingleMovie() {
         fetch(movieApi)
             .then(resp => resp.json())
             .then(data => {
-                console.log(data.reviews);
-                setMovie(data.reviews)
+                console.log(data);
+                setMovie(data)
             })
     }, [])
 
     return (
         <>
-            <Banner title="Film title" subtitle="By Author name" leadtext="lorem ipsum dolor" />
+            <Banner title={movie?.title} subtitle={`By ${movie?.director}`} leadtext={movie?.abstract} />
 
             <section>
                 <div className="container pt-5">
-                    {movie?.map((review) => <MovieReview key={review.id} review={review} />)}
+                    {movie?.reviews.map((review) => <MovieReview key={review.id} review={review} />)}
                 </div>
             </section>
         </>
