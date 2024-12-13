@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react";
 import Banner from "../components/Banner"
 import MovieReview from "../components/MovieReview"
+import MovieReviewFormCard from "../components/MovieReviewFormCard"
 
 export default function SingleMovie() {
     const { id } = useParams()
@@ -22,6 +23,8 @@ export default function SingleMovie() {
     return (
         <>
             <Banner title={movie?.title} subtitle={`By ${movie?.director}`} leadtext={movie?.abstract} />
+
+            <MovieReviewFormCard book_id={id} />
 
             <section>
                 <div className="container pt-5">
