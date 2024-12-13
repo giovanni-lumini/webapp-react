@@ -8,7 +8,13 @@ export default function MovieReviewFormCard({ book_id }) {
 
     function HandleFormSubmit(e) {
         e.preventDefault()
-        console.log('form send');
+
+        const formData = {
+            username,
+            review,
+            vote: rating
+        }
+        console.log(formData);
     }
 
     return (
