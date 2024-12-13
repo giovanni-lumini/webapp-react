@@ -24,7 +24,7 @@ export default function SingleMovie() {
         <>
             <Banner title={movie?.title} subtitle={`By ${movie?.director}`} leadtext={movie?.abstract} />
 
-            <MovieReviewFormCard book_id={id} />
+            <MovieReviewFormCard movie_id={id} />
 
             <section>
                 <div className="container pt-5">
